@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>加拿大28 · 知识库入口</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f9f6f0;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      color: #2b2b2b;
+      line-height: 1.7;
+      padding: 2.5rem 1.2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .page {
+      background-color: #fdfcf9;
+      border-radius: 28px;
+      padding: 2.2rem 2rem 2.8rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+      border: 1px solid #ebe5db;
+    }
+
+    header {
+      border-bottom: 2px dashed #ddd3c3;
+      padding-bottom: 1.6rem;
+      margin-bottom: 2.2rem;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: #3b322a;
+      margin-bottom: 0.3rem;
+    }
+
+    .subhead {
+      color: #6b5f53;
+      font-size: 1.1rem;
+      border-left: 4px solid #c4b49e;
+      padding-left: 1rem;
+      margin-top: 0.3rem;
+    }
+
+    .hero-note {
+      background: #efebe4;
+      padding: 1.2rem 1.6rem;
+      border-radius: 20px;
+      margin: 1.8rem 0 2.2rem;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: #3b342d;
+    }
+
+    .hero-note strong {
+      color: #55422f;
+    }
+
+    .directory-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.6rem;
+      margin: 2.4rem 0;
+    }
+
+    @media (max-width: 640px) {
+      .directory-grid {
+        grid-template-columns: 1fr;
+      }
+      .page {
+        padding: 1.6rem 1.2rem;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+
+    .dir-card {
+      background: #fbf9f6;
+      border: 1px solid #e7dfd4;
+      border-radius: 20px;
+      padding: 1.6rem 1.4rem;
+      transition: box-shadow 0.2s ease;
+    }
+
+    .dir-card:hover {
+      box-shadow: 0 4px 14px rgba(150, 120, 90, 0.06);
+    }
+
+    .dir-card h3 {
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: #4a3e33;
+      border-bottom: 2px solid #d8cdbc;
+      padding-bottom: 0.4rem;
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .dir-card p {
+      font-size: 0.96rem;
+      color: #4b443c;
+    }
+
+    .dir-card a {
+      color: #5f4d38;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+      text-decoration-color: #cbb6a0;
+    }
+
+    .dir-card a:hover {
+      color: #2f241b;
+      text-decoration-color: #826e58;
+    }
+
+    .tip-box {
+      background: #f5f0e9;
+      border-left: 6px solid #b29b82;
+      padding: 1.2rem 1.6rem;
+      border-radius: 14px;
+      margin: 2.4rem 0;
+      font-size: 0.98rem;
+    }
+
+    .faq-mini {
+      margin-top: 2.6rem;
+    }
+
+    .faq-mini h2 {
+      font-size: 1.4rem;
+      font-weight: 450;
+      color: #3e352b;
+      margin-bottom: 1rem;
+    }
+
+    .faq-item {
+      margin-bottom: 1.2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #e5dbcf;
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+
+    .faq-q {
+      font-weight: 500;
+      color: #4c3e30;
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    .faq-a {
+      color: #3d3731;
+      font-size: 0.96rem;
+    }
+
+    .related-box {
+      background: #efede8;
+      border-radius: 18px;
+      padding: 1.4rem 1.8rem;
+      margin-top: 2.8rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .related-box span {
+      font-weight: 450;
+      color: #3d352d;
+    }
+
+    .related-box a {
+      color: #5c4a38;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      margin: 0 0.4rem;
+    }
+
+    .related-box a:hover {
+      color: #2c221b;
+    }
+
+    .footnote {
+      margin-top: 2.8rem;
+      font-size: 0.85rem;
+      color: #7d7264;
+      text-align: center;
+      border-top: 1px solid #e3d9cc;
+      padding-top: 1.6rem;
+    }
+
+    .emph-link {
+      font-weight: 500;
+    }
+
+    .inline-link {
+      color: #5f4d38;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>📚 加拿大28 · 快速识别指南</h1>
+      <div class="subhead">一个帮你厘清网站定位与信息路径的知识库入口</div>
+    </header>
+
+    <div class="hero-note">
+      💡 如果你第一次来到 <strong>cn-official-ca28.com</strong>，可能最想知道的是：<br>
+      “这个网站具体聊什么？它能帮我解决什么问题？我该从哪里看起？”<br>
+      下面这份目录感页面，就是为这个时刻准备的。从特点到提示，再到常见疑问，帮你一次理清脉络。
+    </div>
+
+    <div class="directory-grid">
+      <div class="dir-card">
+        <h3>🔍 基础认识</h3>
+        <p>这个网站并非游戏平台，而是围绕 <a href="https://cn-official-ca28.com">加拿大28</a> 这个主题，提供规则说明、玩法拆解、常见术语以及数据参考。适合刚接触、想先理解概念的新手。</p>
+      </div>
+      <div class="dir-card">
+        <h3>⚙️ 特点与边界</h3>
+        <p>信息以知识梳理和案例说明为主，不提供任何投注、开户或实时预测服务。内容倾向于帮用户建立理性认知，降低因信息差而产生的理解门槛。</p>
+      </div>
+      <div class="dir-card">
+        <h3>🧩 适用场景</h3>
+        <p>· 想快速了解 <a href="https://cn-official-ca28.com">加拿大28</a> 的基本逻辑<br>· 查询相关术语或常见说法<br>· 作为信息参考，辅助自己的判断</p>
+      </div>
+      <div class="dir-card">
+        <h3>📌 使用提醒</h3>
+        <p>所有内容仅供学习与信息整理，不构成任何操作建议。网站内容会持续更新，建议以实际页面为准，并结合其他可靠来源交叉了解。</p>
+      </div>
+    </div>
+
+    <div class="tip-box">
+      ⚠️ 提示区 · 如果你在寻找“怎么玩”“哪里能操作”这类具体步骤，这个网站更适合作为入口前的知识补充站。建议先读完说明区的内容，建立框架后再做进一步了解。
+    </div>
+
+    <div class="faq-mini">
+      <h2>❓ 常见疑问摘要</h2>
+
+      <div class="faq-item">
+        <span class="faq-q">Q：这个网站和“加拿大28”是什么关系？</span>
+        <div class="faq-a">A：它是围绕 <a href="https://cn-official-ca28.com" class="inline-link">加拿大28</a> 这一主题建立的信息型页面，主要提供规则参考、术语解释与基础认知内容，而非官方平台或游戏终端。</div>
+      </div>
+      <div class="faq-item">
+        <span class="faq-q">Q：网站内容权威吗？能直接照着操作吗？</span>
+        <div class="faq-a">A：内容来自公开整理与经验总结，力求准确，但仅供学习参考。任何涉及选择或决策的场景，都建议你自行多方核实。</div>
+      </div>
+      <div class="faq-item">
+        <span class="faq-q">Q：网站会不会有广告或诱导链接？</span>
+        <div class="faq-a">A：本页面为纯介绍性质，不包含广告、下载链接或注册引导。你可以放心浏览。</div>
+      </div>
+    </div>
+
+    <div class="related-box">
+      <span>📎 相关信息</span>
+      <span>
+        <a href="https://cn-official-ca28.com">加拿大28</a> 
+        <span style="color:#b09b86; margin:0 6px;">·</span> 
+        <a href="https://cn-official-ca28.com">加拿大28</a> <span style="font-size:0.86rem; color:#8a7b6b;">（知识库入口）</span>
+      </span>
+    </div>
+
+    <div class="footnote">
+      此页面为知识库入口式介绍页 · 内容方向保持理性与克制 · 如有疑问可参考网站内各板块说明
+    </div>
+  </div>
+</body>
+</html>
